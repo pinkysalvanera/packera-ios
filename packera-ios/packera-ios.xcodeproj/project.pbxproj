@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F03D28322F91330800FFC73A /* WhereNextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F03D28312F91330800FFC73A /* WhereNextView.swift */; };
+		F03D28352F9134E100FFC73A /* WhereNextViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F03D28332F9134D000FFC73A /* WhereNextViewModel.swift */; };
+		F03D28362F9134E100FFC73A /* WhereNextCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F03D28342F9134E100FFC73A /* WhereNextCoordinator.swift */; };
+		F03D28372F9134E100FFC73A /* Destination.swift in Sources */ = {isa = PBXBuildFile; fileRef = F03D28382F9134E100FFC73A /* Destination.swift */; };
 		F0A275CB2F8FCFE300EEFD0A /* packera_iosApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A275CA2F8FCFE300EEFD0A /* packera_iosApp.swift */; };
 		F0A275CD2F8FCFE300EEFD0A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A275CC2F8FCFE300EEFD0A /* ContentView.swift */; };
 		F0A275CF2F8FCFE400EEFD0A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0A275CE2F8FCFE400EEFD0A /* Assets.xcassets */; };
@@ -34,6 +38,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F03D28312F91330800FFC73A /* WhereNextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WhereNextView.swift; sourceTree = "<group>"; };
+		F03D28332F9134D000FFC73A /* WhereNextViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WhereNextViewModel.swift; sourceTree = "<group>"; };
+		F03D28342F9134E100FFC73A /* WhereNextCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WhereNextCoordinator.swift; sourceTree = "<group>"; };
+		F03D28382F9134E100FFC73A /* Destination.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Destination.swift; sourceTree = "<group>"; };
 		F0A275C72F8FCFE300EEFD0A /* packera-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "packera-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0A275CA2F8FCFE300EEFD0A /* packera_iosApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = packera_iosApp.swift; sourceTree = "<group>"; };
 		F0A275CC2F8FCFE300EEFD0A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -94,12 +102,22 @@
 		F0A275C92F8FCFE300EEFD0A /* packera-ios */ = {
 			isa = PBXGroup;
 			children = (
+				F03D28392F9134E100FFC73A /* Models */,
+				F0A275F42F91280000EEFD0A /* WhereNextModule */,
 				F0A275CA2F8FCFE300EEFD0A /* packera_iosApp.swift */,
 				F0A275CC2F8FCFE300EEFD0A /* ContentView.swift */,
 				F0A275CE2F8FCFE400EEFD0A /* Assets.xcassets */,
 				F0A275D02F8FCFE400EEFD0A /* Preview Content */,
 			);
 			path = "packera-ios";
+			sourceTree = "<group>";
+		};
+		F03D28392F9134E100FFC73A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F03D28382F9134E100FFC73A /* Destination.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		F0A275D02F8FCFE400EEFD0A /* Preview Content */ = {
@@ -125,6 +143,16 @@
 				F0A275E72F8FCFE400EEFD0A /* packera_iosUITestsLaunchTests.swift */,
 			);
 			path = "packera-iosUITests";
+			sourceTree = "<group>";
+		};
+		F0A275F42F91280000EEFD0A /* WhereNextModule */ = {
+			isa = PBXGroup;
+			children = (
+				F03D28342F9134E100FFC73A /* WhereNextCoordinator.swift */,
+				F03D28332F9134D000FFC73A /* WhereNextViewModel.swift */,
+				F03D28312F91330800FFC73A /* WhereNextView.swift */,
+			);
+			path = WhereNextModule;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,6 +286,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				F0A275CD2F8FCFE300EEFD0A /* ContentView.swift in Sources */,
+				F03D28362F9134E100FFC73A /* WhereNextCoordinator.swift in Sources */,
+				F03D28352F9134E100FFC73A /* WhereNextViewModel.swift in Sources */,
+				F03D28322F91330800FFC73A /* WhereNextView.swift in Sources */,
+				F03D28372F9134E100FFC73A /* Destination.swift in Sources */,
 				F0A275CB2F8FCFE300EEFD0A /* packera_iosApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
