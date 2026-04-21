@@ -18,6 +18,7 @@
 		F04D40652F97A825004B1492 /* TripStyleCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04D40622F97A825004B1492 /* TripStyleCoordinator.swift */; };
 		F04D40662F97A825004B1492 /* TripStyleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04D40632F97A825004B1492 /* TripStyleView.swift */; };
 		F04D40682F97A860004B1492 /* PackingPreference.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04D40672F97A860004B1492 /* PackingPreference.swift */; };
+		F04D406A2F97A944004B1492 /* TripStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04D40692F97A944004B1492 /* TripStyle.swift */; };
 		F0A275CB2F8FCFE300EEFD0A /* packera_iosApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A275CA2F8FCFE300EEFD0A /* packera_iosApp.swift */; };
 		F0A275CD2F8FCFE300EEFD0A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A275CC2F8FCFE300EEFD0A /* ContentView.swift */; };
 		F0A275CF2F8FCFE400EEFD0A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0A275CE2F8FCFE400EEFD0A /* Assets.xcassets */; };
@@ -56,6 +57,7 @@
 		F04D40622F97A825004B1492 /* TripStyleCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TripStyleCoordinator.swift; sourceTree = "<group>"; };
 		F04D40632F97A825004B1492 /* TripStyleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TripStyleView.swift; sourceTree = "<group>"; };
 		F04D40672F97A860004B1492 /* PackingPreference.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PackingPreference.swift; sourceTree = "<group>"; };
+		F04D40692F97A944004B1492 /* TripStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TripStyle.swift; sourceTree = "<group>"; };
 		F0A275C72F8FCFE300EEFD0A /* packera-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "packera-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0A275CA2F8FCFE300EEFD0A /* packera_iosApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = packera_iosApp.swift; sourceTree = "<group>"; };
 		F0A275CC2F8FCFE300EEFD0A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -96,8 +98,9 @@
 		F03D28392F9134E100FFC73A /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				F04D40672F97A860004B1492 /* PackingPreference.swift */,
 				F03D28382F9134E100FFC73A /* Destination.swift */,
+				F04D40672F97A860004B1492 /* PackingPreference.swift */,
+				F04D40692F97A944004B1492 /* TripStyle.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -186,8 +189,8 @@
 			isa = PBXGroup;
 			children = (
 				F03D28342F9134E100FFC73A /* WhereNextCoordinator.swift */,
-				F03D28332F9134D000FFC73A /* WhereNextViewModel.swift */,
 				F03D28312F91330800FFC73A /* WhereNextView.swift */,
+				F03D28332F9134D000FFC73A /* WhereNextViewModel.swift */,
 			);
 			path = WhereNextModule;
 			sourceTree = "<group>";
@@ -332,6 +335,7 @@
 				F04D40642F97A825004B1492 /* TripStyleViewModel.swift in Sources */,
 				F03D28322F91330800FFC73A /* WhereNextView.swift in Sources */,
 				F04D405F2F97A80D004B1492 /* PackingPreferencesView.swift in Sources */,
+				F04D406A2F97A944004B1492 /* TripStyle.swift in Sources */,
 				F03D28372F9134E100FFC73A /* Destination.swift in Sources */,
 				F04D40682F97A860004B1492 /* PackingPreference.swift in Sources */,
 				F0A275CB2F8FCFE300EEFD0A /* packera_iosApp.swift in Sources */,
