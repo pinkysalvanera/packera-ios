@@ -11,6 +11,13 @@
 		F03D28352F9134E100FFC73A /* WhereNextViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F03D28332F9134D000FFC73A /* WhereNextViewModel.swift */; };
 		F03D28362F9134E100FFC73A /* WhereNextCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F03D28342F9134E100FFC73A /* WhereNextCoordinator.swift */; };
 		F03D28372F9134E100FFC73A /* Destination.swift in Sources */ = {isa = PBXBuildFile; fileRef = F03D28382F9134E100FFC73A /* Destination.swift */; };
+		F04D405D2F97A80D004B1492 /* PackingPreferencesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04D405A2F97A80D004B1492 /* PackingPreferencesViewModel.swift */; };
+		F04D405E2F97A80D004B1492 /* PackingPreferencesCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04D405B2F97A80D004B1492 /* PackingPreferencesCoordinator.swift */; };
+		F04D405F2F97A80D004B1492 /* PackingPreferencesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04D405C2F97A80D004B1492 /* PackingPreferencesView.swift */; };
+		F04D40642F97A825004B1492 /* TripStyleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04D40612F97A825004B1492 /* TripStyleViewModel.swift */; };
+		F04D40652F97A825004B1492 /* TripStyleCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04D40622F97A825004B1492 /* TripStyleCoordinator.swift */; };
+		F04D40662F97A825004B1492 /* TripStyleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04D40632F97A825004B1492 /* TripStyleView.swift */; };
+		F04D40682F97A860004B1492 /* PackingPreference.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04D40672F97A860004B1492 /* PackingPreference.swift */; };
 		F0A275CB2F8FCFE300EEFD0A /* packera_iosApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A275CA2F8FCFE300EEFD0A /* packera_iosApp.swift */; };
 		F0A275CD2F8FCFE300EEFD0A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A275CC2F8FCFE300EEFD0A /* ContentView.swift */; };
 		F0A275CF2F8FCFE400EEFD0A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0A275CE2F8FCFE400EEFD0A /* Assets.xcassets */; };
@@ -42,6 +49,13 @@
 		F03D28332F9134D000FFC73A /* WhereNextViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WhereNextViewModel.swift; sourceTree = "<group>"; };
 		F03D28342F9134E100FFC73A /* WhereNextCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WhereNextCoordinator.swift; sourceTree = "<group>"; };
 		F03D28382F9134E100FFC73A /* Destination.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Destination.swift; sourceTree = "<group>"; };
+		F04D405A2F97A80D004B1492 /* PackingPreferencesViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PackingPreferencesViewModel.swift; sourceTree = "<group>"; };
+		F04D405B2F97A80D004B1492 /* PackingPreferencesCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PackingPreferencesCoordinator.swift; sourceTree = "<group>"; };
+		F04D405C2F97A80D004B1492 /* PackingPreferencesView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PackingPreferencesView.swift; sourceTree = "<group>"; };
+		F04D40612F97A825004B1492 /* TripStyleViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TripStyleViewModel.swift; sourceTree = "<group>"; };
+		F04D40622F97A825004B1492 /* TripStyleCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TripStyleCoordinator.swift; sourceTree = "<group>"; };
+		F04D40632F97A825004B1492 /* TripStyleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TripStyleView.swift; sourceTree = "<group>"; };
+		F04D40672F97A860004B1492 /* PackingPreference.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PackingPreference.swift; sourceTree = "<group>"; };
 		F0A275C72F8FCFE300EEFD0A /* packera-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "packera-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0A275CA2F8FCFE300EEFD0A /* packera_iosApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = packera_iosApp.swift; sourceTree = "<group>"; };
 		F0A275CC2F8FCFE300EEFD0A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -79,6 +93,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F03D28392F9134E100FFC73A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F04D40672F97A860004B1492 /* PackingPreference.swift */,
+				F03D28382F9134E100FFC73A /* Destination.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F04D40592F97A7FA004B1492 /* PackingPreferencesModule */ = {
+			isa = PBXGroup;
+			children = (
+				F04D405B2F97A80D004B1492 /* PackingPreferencesCoordinator.swift */,
+				F04D405C2F97A80D004B1492 /* PackingPreferencesView.swift */,
+				F04D405A2F97A80D004B1492 /* PackingPreferencesViewModel.swift */,
+			);
+			path = PackingPreferencesModule;
+			sourceTree = "<group>";
+		};
+		F04D40602F97A814004B1492 /* TripStyleModule */ = {
+			isa = PBXGroup;
+			children = (
+				F04D40622F97A825004B1492 /* TripStyleCoordinator.swift */,
+				F04D40632F97A825004B1492 /* TripStyleView.swift */,
+				F04D40612F97A825004B1492 /* TripStyleViewModel.swift */,
+			);
+			path = TripStyleModule;
+			sourceTree = "<group>";
+		};
 		F0A275BE2F8FCFE300EEFD0A = {
 			isa = PBXGroup;
 			children = (
@@ -102,22 +145,16 @@
 		F0A275C92F8FCFE300EEFD0A /* packera-ios */ = {
 			isa = PBXGroup;
 			children = (
-				F03D28392F9134E100FFC73A /* Models */,
-				F0A275F42F91280000EEFD0A /* WhereNextModule */,
-				F0A275CA2F8FCFE300EEFD0A /* packera_iosApp.swift */,
-				F0A275CC2F8FCFE300EEFD0A /* ContentView.swift */,
 				F0A275CE2F8FCFE400EEFD0A /* Assets.xcassets */,
+				F0A275CC2F8FCFE300EEFD0A /* ContentView.swift */,
+				F03D28392F9134E100FFC73A /* Models */,
+				F0A275CA2F8FCFE300EEFD0A /* packera_iosApp.swift */,
+				F04D40592F97A7FA004B1492 /* PackingPreferencesModule */,
 				F0A275D02F8FCFE400EEFD0A /* Preview Content */,
+				F04D40602F97A814004B1492 /* TripStyleModule */,
+				F0A275F42F91280000EEFD0A /* WhereNextModule */,
 			);
 			path = "packera-ios";
-			sourceTree = "<group>";
-		};
-		F03D28392F9134E100FFC73A /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				F03D28382F9134E100FFC73A /* Destination.swift */,
-			);
-			path = Models;
 			sourceTree = "<group>";
 		};
 		F0A275D02F8FCFE400EEFD0A /* Preview Content */ = {
@@ -285,11 +322,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F04D405D2F97A80D004B1492 /* PackingPreferencesViewModel.swift in Sources */,
+				F04D405E2F97A80D004B1492 /* PackingPreferencesCoordinator.swift in Sources */,
 				F0A275CD2F8FCFE300EEFD0A /* ContentView.swift in Sources */,
+				F04D40652F97A825004B1492 /* TripStyleCoordinator.swift in Sources */,
 				F03D28362F9134E100FFC73A /* WhereNextCoordinator.swift in Sources */,
+				F04D40662F97A825004B1492 /* TripStyleView.swift in Sources */,
 				F03D28352F9134E100FFC73A /* WhereNextViewModel.swift in Sources */,
+				F04D40642F97A825004B1492 /* TripStyleViewModel.swift in Sources */,
 				F03D28322F91330800FFC73A /* WhereNextView.swift in Sources */,
+				F04D405F2F97A80D004B1492 /* PackingPreferencesView.swift in Sources */,
 				F03D28372F9134E100FFC73A /* Destination.swift in Sources */,
+				F04D40682F97A860004B1492 /* PackingPreference.swift in Sources */,
 				F0A275CB2F8FCFE300EEFD0A /* packera_iosApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
