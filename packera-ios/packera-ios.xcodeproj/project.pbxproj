@@ -19,6 +19,10 @@
 		F04D40662F97A825004B1492 /* TripStyleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04D40632F97A825004B1492 /* TripStyleView.swift */; };
 		F04D40682F97A860004B1492 /* PackingPreference.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04D40672F97A860004B1492 /* PackingPreference.swift */; };
 		F04D406A2F97A944004B1492 /* TripStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04D40692F97A944004B1492 /* TripStyle.swift */; };
+		F04D406F2FA0D969004B1492 /* PackingListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04D406C2FA0D969004B1492 /* PackingListCoordinator.swift */; };
+		F04D40702FA0D969004B1492 /* PackingListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04D406D2FA0D969004B1492 /* PackingListView.swift */; };
+		F04D40712FA0D969004B1492 /* PackingListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04D406E2FA0D969004B1492 /* PackingListViewModel.swift */; };
+		F04D40732FA0D991004B1492 /* PackingCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04D40722FA0D991004B1492 /* PackingCategory.swift */; };
 		F0A275CB2F8FCFE300EEFD0A /* packera_iosApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A275CA2F8FCFE300EEFD0A /* packera_iosApp.swift */; };
 		F0A275CD2F8FCFE300EEFD0A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A275CC2F8FCFE300EEFD0A /* ContentView.swift */; };
 		F0A275CF2F8FCFE400EEFD0A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0A275CE2F8FCFE400EEFD0A /* Assets.xcassets */; };
@@ -58,6 +62,10 @@
 		F04D40632F97A825004B1492 /* TripStyleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TripStyleView.swift; sourceTree = "<group>"; };
 		F04D40672F97A860004B1492 /* PackingPreference.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PackingPreference.swift; sourceTree = "<group>"; };
 		F04D40692F97A944004B1492 /* TripStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TripStyle.swift; sourceTree = "<group>"; };
+		F04D406C2FA0D969004B1492 /* PackingListCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PackingListCoordinator.swift; sourceTree = "<group>"; };
+		F04D406D2FA0D969004B1492 /* PackingListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PackingListView.swift; sourceTree = "<group>"; };
+		F04D406E2FA0D969004B1492 /* PackingListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PackingListViewModel.swift; sourceTree = "<group>"; };
+		F04D40722FA0D991004B1492 /* PackingCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PackingCategory.swift; sourceTree = "<group>"; };
 		F0A275C72F8FCFE300EEFD0A /* packera-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "packera-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0A275CA2F8FCFE300EEFD0A /* packera_iosApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = packera_iosApp.swift; sourceTree = "<group>"; };
 		F0A275CC2F8FCFE300EEFD0A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -98,6 +106,7 @@
 		F03D28392F9134E100FFC73A /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				F04D40722FA0D991004B1492 /* PackingCategory.swift */,
 				F03D28382F9134E100FFC73A /* Destination.swift */,
 				F04D40672F97A860004B1492 /* PackingPreference.swift */,
 				F04D40692F97A944004B1492 /* TripStyle.swift */,
@@ -125,6 +134,16 @@
 			path = TripStyleModule;
 			sourceTree = "<group>";
 		};
+		F04D406B2FA0D941004B1492 /* PackingListModule */ = {
+			isa = PBXGroup;
+			children = (
+				F04D406C2FA0D969004B1492 /* PackingListCoordinator.swift */,
+				F04D406D2FA0D969004B1492 /* PackingListView.swift */,
+				F04D406E2FA0D969004B1492 /* PackingListViewModel.swift */,
+			);
+			path = PackingListModule;
+			sourceTree = "<group>";
+		};
 		F0A275BE2F8FCFE300EEFD0A = {
 			isa = PBXGroup;
 			children = (
@@ -148,6 +167,7 @@
 		F0A275C92F8FCFE300EEFD0A /* packera-ios */ = {
 			isa = PBXGroup;
 			children = (
+				F04D406B2FA0D941004B1492 /* PackingListModule */,
 				F0A275CE2F8FCFE400EEFD0A /* Assets.xcassets */,
 				F0A275CC2F8FCFE300EEFD0A /* ContentView.swift */,
 				F03D28392F9134E100FFC73A /* Models */,
@@ -328,11 +348,15 @@
 				F04D405D2F97A80D004B1492 /* PackingPreferencesViewModel.swift in Sources */,
 				F04D405E2F97A80D004B1492 /* PackingPreferencesCoordinator.swift in Sources */,
 				F0A275CD2F8FCFE300EEFD0A /* ContentView.swift in Sources */,
+				F04D40732FA0D991004B1492 /* PackingCategory.swift in Sources */,
+				F04D406F2FA0D969004B1492 /* PackingListCoordinator.swift in Sources */,
+				F04D40702FA0D969004B1492 /* PackingListView.swift in Sources */,
 				F04D40652F97A825004B1492 /* TripStyleCoordinator.swift in Sources */,
 				F03D28362F9134E100FFC73A /* WhereNextCoordinator.swift in Sources */,
 				F04D40662F97A825004B1492 /* TripStyleView.swift in Sources */,
 				F03D28352F9134E100FFC73A /* WhereNextViewModel.swift in Sources */,
 				F04D40642F97A825004B1492 /* TripStyleViewModel.swift in Sources */,
+				F04D40712FA0D969004B1492 /* PackingListViewModel.swift in Sources */,
 				F03D28322F91330800FFC73A /* WhereNextView.swift in Sources */,
 				F04D405F2F97A80D004B1492 /* PackingPreferencesView.swift in Sources */,
 				F04D406A2F97A944004B1492 /* TripStyle.swift in Sources */,
