@@ -21,7 +21,7 @@ struct WeatherSummaryView: View {
                         weatherCard
                             .padding(.horizontal, 20)
 
-                        HStack(spacing: 12) {
+                        VStack(spacing: 16) {
                             whatToExpectCard
                             duringYourDatesCard
                         }
@@ -178,14 +178,14 @@ struct WeatherSummaryView: View {
                         Image(systemName: expectation.iconName)
                             .font(.system(size: 16))
                             .foregroundColor(iconColor(for: index))
-                            .frame(width: 20)
+                            .frame(width: 20, alignment: .leading)
 
                         Text(expectation.title)
                             .font(.system(size: 14, weight: .regular))
                             .foregroundColor(Color(red: 0.35, green: 0.40, blue: 0.50))
-                            .fixedSize(horizontal: false, vertical: true)
-
-                        Spacer()
+                            .multilineTextAlignment(.leading)
+                            .lineLimit(nil)
+                            .frame(maxWidth: .infinity, alignment: .leading)
                     }
                 }
             }
